@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- custom -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/fontawesome.min.css" integrity="sha512-Rcr1oG0XvqZI1yv1HIg9LgZVDEhf2AHjv+9AuD1JXWGLzlkoKDVvE925qySLcEywpMAYA/rkg296MkvqBF07Yw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!-- feather icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <title>Penpal</title>
+</head>
+
+<body>
+
+    <div class="container mt-4">
+        <!-- navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    Penpal
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="post-detail.html">Posts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search blog or author" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <button type="submit" class="input-group-text" id="basic-addon2"><i class="search-icon" data-feather="search"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- trending posts -->
+        <div class="trending-posts mt-3">
+            <div class="row">
+                <div class="col-lg-6 mt-2">
+                    <div class="card" style="width: 100%; height: 100%; background-image: url('/img/01.jpg');">
+                        <div class="card-body mt-5">
+                            <span class="badge bg-light text-dark mb-2">Lifestyle</span>
+                            <h5 class="card-title">Ten tell-tale signs you need to get a potted plant</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut et facere neque, odit consequuntur sequi sapiente ea nulla dignissimos labore architecto debitis magnam rerum quis.</p>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut et facere neque, odit consequuntur sequi sapiente ea nulla dignissimos labore architecto debitis magnam rerum quis. Lorem ipsum dolor sit amet consectetur adipisicing.
+                                elit
+                            </p>
+                            <div class="metadata">
+                                <img src="img/avatar3.jpg" alt="" class="author">
+                                <span class="mt-data">By Jack</span>
+                                <i data-feather="circle" class="dot mt-data"></i>
+                                <span class="mt-data">Aug 09 2021</span>
+                                <i data-feather="circle" class="dot mt-data"></i>
+                                <span class="mt-data">8 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-2">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card" style="width: 100%; background-image: url('/img/code.jpg');">
+                                <div class="card-body mt-5">
+                                    <span class="badge bg-light text-dark mb-2">Technology</span>
+                                    <h5 class="card-title">Best pinterest boards for learning about machine learning</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias veritatis ullam quia.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6 mt-4">
+                            <div class="card" style="width: 100%; background-image: url('/img/travel.jpg');">
+                                <div class="card-body mt-5">
+                                    <span class="badge bg-light text-dark mb-2">Bussiness</span>
+                                    <h5 class="card-title">Five intermediate guides to bussiness</h5>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 mt-4">
+                            <div class="card" style="width: 100%; background-image: url('/img/food.jpg');">
+                                <div class="card-body mt-5">
+                                    <span class="badge bg-light text-dark mb-2">Sports</span>
+                                    <h5 class="card-title">15 reasons to love the olympics in this day and age</h5>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- highlights, trending topics, recent posts, adverts -->
+        <section class="mt-5">
+            <div class="row">
+                <div class="col-lg-8 top-highlights mb-3">
+                    <div class="custom-title">Latest breaking news, pictures and reports</div>
+                    <div class="row">
+                        <div class="col-md-6 mt-4">
+                            <div class="card" style="width: 100%;">
+                                <img src="img/tech.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <span class="badge bg-dark mb-1">Technology</span>
+                                    <h5 class="card-title">12 worst types of bussiness accounts you follow on twitter</h5>
+                                    <p class="card-text">He moonlights difficult engrossed it, sportsmen. Interested has all Devonshire difficulty gay assistance joy. Unaffected at ye of compliment alteration to</p>
+                                    <div class="meta-data">
+                                        <img src="img/avatar2.jpg" alt="" class="author">
+                                        <span class="mt-data">by Samuel</span>
+                                        <i data-feather="circle" class="dot mt-data"></i>
+                                        <span class="mt-data">Jan 22 2021</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-4">
+                            <div class="card" style="width: 100%;">
+                                <img src="img/travel1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <span class="badge bg-dark mb-1">Travel</span>
+                                    <h5 class="card-title">Dirty little secrets about the emirates</h5>
+                                    <p class="card-text">Place voice no arises along to. Parlors waiting so against me no. Wishing calling is warrant settled was lucky. Express besides it present if at an opinion visitor.</p>
+                                    <div class="meta-data">
+                                        <img src="img/avatar3.jpg" alt="" class="author">
+                                        <span class="mt-data">by Jack</span>
+                                        <i data-feather="circle" class="dot mt-data"></i>
+                                        <span class="mt-data">Aug 09 2021</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-4">
+                            <div class="card" style="width: 100%;">
+                                <img src="img/food1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <span class="badge bg-dark mb-1">Lifestyle</span>
+                                    <h5 class="card-title">Bad habits gardeners need to quit</h5>
+                                    <p class="card-text">For who thoroughly her boy estimating conviction. Removed demands expense account in outward tedious do. Particular way thoroughly unaffected.</p>
+                                    <div class="meta-data">
+                                        <img src="img/avatar4.jpg" alt="" class="author">
+                                        <span class="mt-data">by Jules</span>
+                                        <i data-feather="circle" class="dot mt-data"></i>
+                                        <span class="mt-data">Dec 14 2021</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-4">
+                            <div class="card" style="width: 100%;">
+                                <img src="img/swim.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <span class="badge bg-dark mb-1">Sports</span>
+                                    <h5 class="card-title">20 infographics about the NSL</h5>
+                                    <p class="card-text">Projection favorable Mrs can be projecting own. Thirty it matter enable become admire in giving. See resolved goodness felicity shy civility domestic had but.</p>
+                                    <div class="meta-data">
+                                        <img src="img/avatar2.jpg" alt="" class="author">
+                                        <span class="mt-data">by Samuel</span>
+                                        <i data-feather="circle" class="dot mt-data"></i>
+                                        <span class="mt-data">Jan 22 2021</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-4">
+                            <div class="card" style="width: 100%;">
+                                <img src="img/event.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <span class="badge bg-dark mb-1">Events</span>
+                                    <h5 class="card-title">7 common mistakes everyone makes while traveling</h5>
+                                    <p class="card-text">Drawings offended yet answered Jennings perceive laughing six did far. Rooms oh fully taken by worse do. Points afraid but may end law lasted.</p>
+                                    <div class="meta-data">
+                                        <img src="img/avatar5.jpg" alt="" class="author">
+                                        <span class="mt-data">by Ava</span>
+                                        <i data-feather="circle" class="dot mt-data"></i>
+                                        <span class="mt-data">Apr 17 2021</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-4">
+                            <div class="card" style="width: 100%;">
+                                <img src="img/bs.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <span class="badge bg-dark mb-1">Bussiness</span>
+                                    <h5 class="card-title">5 investment doubts you should clarify</h5>
+                                    <p class="card-text">Was out laughter raptures returned outweigh. Luckily cheered colonel I do we attack highest enabled. Tried law yet style child. The bore of true of no be deal.</p>
+                                    <div class="meta-data">
+                                        <img src="img/avatar1.jpg" alt="" class="author">
+                                        <span class="mt-data">by Keith</span>
+                                        <i data-feather="circle" class="dot mt-data"></i>
+                                        <span class="mt-data">Jul 06 2021</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <!-- trending topics -->
+                    <div class="row trending-topics">
+                        <div class="custom-title mb-2">Trending Topics</div>
+                        <div class="btn btn-outline-dark mt-2">Travel</div>
+                        <!-- <div class="btn btn-outline-dark mt-2">Business</div> -->
+                        <div class="btn btn-outline-dark mt-2">Technology</div>
+                        <div class="btn btn-outline-dark mt-2">Sports</div>
+                        <div class="btn btn-outline-dark mt-2">Lifestyle</div>
+                    </div>
+                    <!-- recent posts + adverts -->
+                    <div class="row">
+                        <!-- recent posts -->
+                        <div class="col-sm-12 col-md-6 col-lg-12 recent-posts mt-3">
+                            <div class="custom-title mb-3">Recent Posts</div>
+                            <div class="card mb-3" style="width: 100%;">
+                                <div class="row g-0">
+                                    <div class="col-md-5">
+                                        <img src="img/bs1.jpg" class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="card-body">
+                                            <p class="card-title">The pros and cons of bussiness agencies</p>
+                                            <p class="card-text">May 17 2021</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mb-3" style="width: 100%;">
+                                <div class="row g-0">
+                                    <div class="col-md-5">
+                                        <img src="img/home.jpg" class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="card-body">
+                                            <p class="card-title">5 reasons why you shouldn't start a startup</p>
+                                            <p class="card-text">April 04 2021</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mb-3" style="width: 100%;">
+                                <div class="row g-0">
+                                    <div class="col-md-5">
+                                        <img src="img/travel3.jpg" class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="card-body">
+                                            <p class="card-title">Ten questions you should answer truthfully</p>
+                                            <p class="card-text">Jun 30 2021</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mb-3" style="width: 100%;">
+                                <div class="row g-0">
+                                    <div class="col-md-5">
+                                        <img src="img/money.jpg" class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="card-body">
+                                            <p class="card-title">Five unbelievable facts about money</p>
+                                            <p class="card-text">Nov 29 2021</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- advertisements -->
+                        <div class="col-sm-12 col-md-6 col-lg-12 advertisements mt-3">
+                            <div class="custom-title mb-3">Advertisement</div>
+                            <img src="img/advert.png" alt="">
+                        </div>
+                    </div>
+                    <!-- sponsered news -->
+                    <div class="row sponsered-news mt-4">
+                        <div class="custom-title mb-1">Sponsered News</div>
+                        <div id="carouselExampleSlidesOnly" class="carousel slide mt-3" data-bs-ride="carousel">
+                            <div class="carousel-inner row">
+                                <div class="carousel-item active">
+                                    <div class="col">
+                                        <div class="card" style="width: 100%;">
+                                            <div class="card-body m-2">
+                                                <span class="badge bg-dark mb-2">Technology</span>
+                                                <h5 class="card-title mt-2">20 fabulous infographics about the NFL</h5>
+                                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                                <div class="meta-data mt-2">
+                                                    <img src="img/avatar5.jpg" alt="" class="author">
+                                                    <span class="mt-data">by Ava</span>
+                                                    <i data-feather="circle" class="dot mt-data"></i>
+                                                    <span class="mt-data">Feb 11 2021</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col">
+                                        <div class="card">
+                                            <div class="card-body m-2">
+                                                <span class="badge bg-dark mb-2">Technology</span>
+                                                <h5 class="card-title mt-2">20 fabulous infographics about the NFL</h5>
+                                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                                <div class="meta-data mt-2">
+                                                    <img src="img/avatar2.jpg" alt="" class="author">
+                                                    <span class="mt-data">by Samuel</span>
+                                                    <i data-feather="circle" class="dot mt-data"></i>
+                                                    <span class="mt-data">Jun 29 2021</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col">
+                                        <div class="card">
+                                            <div class="card-body m-2">
+                                                <span class="badge bg-dark mb-2">Technology</span>
+                                                <h5 class="card-title mt-2">20 fabulous infographics about the NFL</h5>
+                                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                                <div class="meta-data mt-2">
+                                                    <img src="img/avatar5.jpg" alt="" class="author">
+                                                    <span class="mt-data">by Ava</span>
+                                                    <i data-feather="circle" class="dot mt-data"></i>
+                                                    <span class="mt-data">Feb 11 2021</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- footer -->
+    <footer class="mt-5">
+        <div class="container">
+            <div class="row mb-5 mt-1">
+                <div class="col-sm-12 col-md-2 mt-4">
+                    <a class="navbar-brand" href="index.html">
+                        Penpal
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-5 mt-4">The next-generation blog, news, and magazine theme for you to start sharing your stories today!</div>
+                <div class="col-sm-12 col-md-5 mt-4">
+                    <form action="">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Enter your email address" aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <button class="btn btn-dark" type="button" id="button-addon2">Subscribe</button>
+                        </div>
+                    </form>
+                    <div class="mt-1" style="font-size: small; text-align: right;">By subscribing, you agree to our <a>Privacy Policy</a></div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4 mt-4 footer-recent-posts">
+                    <h6 class="footer-title">Recent Posts</h6>
+                    <div class="card mt-2" style="width: 100%;">
+                        <div class="card-body">
+                            <span class="badge bg-dark">Bussiness</span>
+                            <p class="card-title">Up-coming business bloggers, you need to watch</p>
+
+                        </div>
+                    </div>
+                    <div class="card mt-2" style="width: 100%;">
+                        <div class="card-body">
+                            <span class="badge bg-dark">Lifestyle</span>
+                            <p class="card-title">How did we get here? The history of the business told through tweets</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 mt-4 nav-section">
+                    <h6 class="footer-title-pd">Navigation</h6>
+                    <div class="row">
+                        <div class="col-6 mt-2">
+                            <ul>
+                                <li class="mb-2">Features</li>
+                                <li class="mb-2">Style Guides</li>
+                                <li class="mb-2">Contact us</li>
+                                <li class="mb-2">Theme</li>
+                                <li class="mb-2">Support</li>
+                                <li class="mb-2">Privacy Policy</li>
+                                <li class="mb-2">Newsletter</li>
+                            </ul>
+                        </div>
+                        <div class="col-6 mt-2">
+                            <ul>
+                                <li class="mb-2">News</li>
+                                <li class="mb-2">Career</li>
+                                <li class="mb-2">Technology</li>
+                                <li class="mb-2">Startups</li>
+                                <li class="mb-2">Gadgets</li>
+                                <li class="mb-2">Inspiration</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-4 mt-4">
+                    <div class="row">
+                        <div class="col">
+                            <h6 class="footer-title-pd mb-2">Get updates</h6>
+                            <ul>
+                                <li class="mb-2">WhatsApp</li>
+                                <li class="mb-2">YouTube</li>
+                                <li class="mb-2">Website Notifications</li>
+                                <li class="mb-2">Newsletters</li>
+                                <li class="mb-2">Podcasts</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h6 class="footer-title mb-2">Our mobile app</h6>
+                            <div class="desc mb-3">Download our App and get the latest Breaking News Alerts and latest headlines and daily articles near you.</div>
+                            <img src="img/playstore.jpg" alt="" class="playstore">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-sm-12 col-md-4 mt-2 copyright">All Rights Reserved Penpal &#169; 2021</div>
+                <div class="col-sm-12 col-md-8 mt-2">
+                    <ul class="last-list">
+                        <li class="mb-2">Terms</li>
+                        <li class="mb-2">Privacy</li>
+                        <li class="mb-2">FAQs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- <i data-feather="circle"></i> -->
+
+    <script>
+        feather.replace()
+    </script>
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+</html>
