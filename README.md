@@ -1,2 +1,2 @@
 ﻿# Penpal Blog
- This is a responsive website design using HTML, CSS and Bootstrap.
+ This is a responsive website made using using HTML, CSS and Bootstrap.
